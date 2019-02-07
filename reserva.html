@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Reserva</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<falcon
+	</head>
+	<body>
+		<!--Início do container-->
+		<div id="container">
+			<!--Início do topo-->
+			<div id="topo">
+				<!--Início da area do logo-->
+				<div id="area-logo">
+					<h1 class="logo"><a href="index.html">Chalé Hotel</a></h1>
+				</div>
+				<!--Fim da area do logo-->
+				<!--Início do menu-->
+				<div id="area-menu">
+					<div id="conteudo-menu">
+						<!--abertura do menu locais-->
+						<div id="menu-locais">
+							<span class="locais">
+								Rio de Janeiro - São Paulo - Belo Horizonte
+							</span>
+							<a  class="reserva" href="reserva.html">Reservar</a>
+							<div style="clear: both;"></div>
+						</div>
+						<!--Fechamento do menu locais-->
+						<!--Início do menu-->
+						<div id="menu">
+							<ul id="navegacao">
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="">História</a>
+								</li>
+								<li>
+									<a href="">Imprensa</a>
+								</li>
+								<li>
+									<a href="">Gastronomia</a>
+								</li>
+								<li>
+									<a href="">Contato</a>
+								</li>
+							</ul>
+							<img class="depoimento" src="imagens/depoimento.png">
+						</div>
+						<!--Fim do menu-->
+					</div>
+				</div>
+				<!--Fim do menu-->
+			</div>
+			<!--Fim do topo-->
+			<!--Inicio do Corpo-->
+			<div id="corpo-reserva">
+				<h1>Reservas</h1>
+				<form>
+					<fieldset>
+						<legend>Dados  Pessoais</legend>
+						<div class="esquerda">
+							<label  for="nome">Nome:</label>
+								<input type="text" name="nome" id="nome" placeholder="Frist-name">
+						</div>
+						<div class="direita">
+							<label  for="sobrenome">Sobrenome:</label>
+								<input type="text" name="nome" id="sobrenome" placeholder="Last-name">
+						</div>
+						<div class="esquerda">
+							<label for="email">E-mail:</label>
+							<input type="email" name="nome" id="email" placeholder="exemplo@exemplo.com">
+						</div>
+						<div class="direita">
+							<label for="cep">Cep:</label>
+							<input name="CEP" id="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)" placeholder="00000-000" />
+						</div>
+						<div class="esquerda">
+							<label for="cpf">Cpf:</label>
+							<input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="xxx.xxx.xxx-xx" >
+						</div>
+						<div class="direita">
+							<label for="rg">RG:</label>
+							<input type="text" name="rg" maxlength="11" OnKeyPress="formatar('##.###.###-#', this)" placeholder="xx.xxx.xxx-x" >
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Dados do quarto</legend>
+						<div class="esquerda">
+							<label>Suítes</label>
+							<select>
+								<option>--------</option>
+								<option>Suíte bísness</option>
+								<option>Suíte classic</option>
+								<option>Suíte luxo</option>
+								<option>Suíte President</option>
+								<option>Suíte Queen</option>
+							</select>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+		<!--Fim do Container-->	
+	</body>
+</html>
