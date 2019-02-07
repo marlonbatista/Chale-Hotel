@@ -4,7 +4,7 @@
 		<title>Reserva</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/estilo.css">
-		<falcon
+		<link rel="shortcut icon" href="imagens/favicon.ico" />
 	</head>
 	<body>
 		<!--Início do container-->
@@ -58,6 +58,7 @@
 			<!--Inicio do Corpo-->
 			<div id="corpo-reserva">
 				<h1>Reservas</h1>
+				<!--Início do Formulário-->
 				<form>
 					<fieldset>
 						<legend>Dados  Pessoais</legend>
@@ -75,33 +76,75 @@
 						</div>
 						<div class="direita">
 							<label for="cep">Cep:</label>
-							<input name="CEP" id="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)" placeholder="00000-000" />
+							<input name="CEP" id="cep" id="cep" maxlength="9" OnKeyPress="formatar('#####-###', this)" placeholder="00000-000" />
 						</div>
 						<div class="esquerda">
 							<label for="cpf">Cpf:</label>
-							<input type="text" name="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="xxx.xxx.xxx-xx" >
+							<input type="text" name="cpf" id="cpf" maxlength="14" OnKeyPress="formatar('###.###.###-##', this)" placeholder="xxx.xxx.xxx-xx" >
 						</div>
 						<div class="direita">
 							<label for="rg">RG:</label>
-							<input type="text" name="rg" maxlength="11" OnKeyPress="formatar('##.###.###-#', this)" placeholder="xx.xxx.xxx-x" >
+							<input type="text" name="rg" id="rg" maxlength="11" OnKeyPress="formatar('##.###.###-#', this)" placeholder="xx.xxx.xxx-x" >
+						</div>
+						<div class="esquerda">
+							<label for="telefone">Telefone:</label>
+							<input type="text" name="telefone" id="telefone" maxlength="14" OnKeyPress="formatar('(###)####-####', this)" placeholder="(xxx)xxxx-xxxx" >
+						</div>
+						<div class="direita">
+							<label for="celular">Celular:</label>
+							<input type="text" name="celular" id="celular" maxlength="14" OnKeyPress="formatar('(###)####-####', this)" placeholder="(xxx)xxxx-xxxx" >
 						</div>
 					</fieldset>
 					<fieldset>
 						<legend>Dados do quarto</legend>
-						<div class="esquerda">
-							<label>Suítes</label>
-							<select>
-								<option>--------</option>
-								<option>Suíte bísness</option>
-								<option>Suíte classic</option>
-								<option>Suíte luxo</option>
-								<option>Suíte President</option>
-								<option>Suíte Queen</option>
-							</select>
+						<label>Suítes</label>
+						<div class="quarto">
+							<label class="color">Suíte bísness
+								<input type="radio"  name="quarto" id="bisness" value="bisness">
+							</label>
 						</div>
+						<div class="quarto">
+							<label class="color">
+								<input type="radio"  name="quarto" id="classic" value="classic">Suíte classic
+							</label>
+						</div>
+						<div class="quarto">
+							<label class="color">
+								<input type="radio"  name="quarto" id="luxo" value="luxo">Suíte Luxo
+							</label>
+						</div>
+						<div class="quarto">
+							<label class="color">
+								<input type="radio"  name="quarto" id="king" value="king">Suíte King
+							</label>
+						</div>					
+								
+						<div class="check">
+    						<label for="dia">Informe a data de Check In:</label>
+    						<input type="date" id="dia" name="dia">
+  						</div>
+  						<div class="check">
+    						<label for="dia">Informe a data de Checkout:</label>
+    						<input type="date" id="dia" name="dia">
+  						</div>
+  						<dir id="botao">
+  							<input type="submit" name="enviar" id="enviar"
+  							value="Reservar">
+  							<input type="reset" name="resetar" id="resetar"
+  							value="Apagar">
+  						</dir>
 					</fieldset>
 				</form>
+				<!--Fim do Formulário-->
 			</div>
+			<!--Fim do Corpo-->
+			<!--Início do Rodapé-->
+			<div id="rodape">
+				<span>
+					&copy; Copyright 2000-2020 Chalé Hotel
+				</span>
+			</div>
+			<!--Fim do Rodapé-->
 		</div>
 		<!--Fim do Container-->	
 	</body>
