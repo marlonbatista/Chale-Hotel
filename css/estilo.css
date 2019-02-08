@@ -176,7 +176,7 @@ Navegação lateral*/
 #corpo-reserva{
 	padding: 15px;
 	margin-left: 180px;
-	width:780px ;
+	width:70% ;
 	background: #fdf6be;
 }
 fieldset{
@@ -237,4 +237,37 @@ input{
 	float: left;
 	margin-right: 180px;
 	margin-top: 10px;
+}
+/********************************************
+****Página de História********/
+#corpo{
+	background:#F3E2A9;
+	width:75%;
+	margin: 0 auto;
+	height: 100%;
+}
+#esquerda{
+	width: 50%;
+	float: left;
+	background: #F5DA81;
+}
+#direita{
+	width: 50%;
+	float: right;
+	background: #5E610B;
+}
+#esquerda p, #direita p {
+	margin-top: 15px;
+	padding: 5px 20px;
+	text-align: justify;
+	font-weight: bold;
+}
+#esquerda img, #direita img {
+	margin-left: 25px;
+	margin-bottom: 0px;
+	width: 88%;
+
+}
+#direita img {
+	margin-bottom: 10px;
 }
